@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xmlns="http://www.bea.com/ns/weblogic/weblogic-web-app"
+                  xsi:schemaLocation="http://www.bea.com/ns/weblogic/weblogic-web-app http://www.bea.com/ns/weblogic/weblogic-web-app.xsd">
+    <context-root>/beardthered</context-root>
+    <container-descriptor>
+        <servlet-reload-check-secs>-1</servlet-reload-check-secs>
+        <resource-reload-check-secs>-1</resource-reload-check-secs>
+        <prefer-application-packages>
+            <package-name>com.google.common.*</package-name>
+            <package-name>javax.persistence.*</package-name>
+            <package-name>org.joda.*</package-name>
+            <package-name>oracle.jdbc.*</package-name>
+            <package-name>oracle.core.*</package-name>
+            <package-name>oracle.jpub.*</package-name>
+            <package-name>oracle.net.*</package-name>
+            <package-name>oracle.security.*</package-name>
+            <package-name>org.slf4j.*</package-name>
+            <package-name>org.joda.time.*</package-name>
+            <package-name>org.apache.log4j.*</package-name>
+            <package-name>org.bouncycastle.*</package-name>
+            <package-name>net.sf.ehcache.*</package-name>
+        </prefer-application-packages>
+    </container-descriptor>
+    <jsp-descriptor>
+        <page-check-seconds>-1</page-check-seconds>
+        <verbose>false</verbose>
+        <compress-html-template>true</compress-html-template>
+    </jsp-descriptor>
+    <wl-dispatch-policy>BEARDTHERED-WM</wl-dispatch-policy>
+</weblogic-web-app>
+

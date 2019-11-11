@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <appender name="WSLog" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="logs/AppLogs/WSLog.log"/>
+        <param name="encoding" value="UTF-8" />
+        <param name="DatePattern" value=".yyyy-MM-dd"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss,SSS} %5p %c{1}:%L - %m%n" />
+        </layout>
+    </appender>
+
+    <category name="beardthered">
+        <priority value="error"/>
+    </category>
+
+    <root>
+        <priority value="error"/>
+        <appender-ref ref="WSLog" />
+    </root>
+</log4j:configuration>
