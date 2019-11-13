@@ -1,9 +1,8 @@
-package beardthered.services.impl;
+package beardthered.services;
 
-import beardthered.services.ExampleService;
 import org.springframework.stereotype.Service;
 
-@Service("exampleWebService")
+@Service("exampleService")
 public class ExampleServiceImpl implements ExampleService
 {
     @Override
