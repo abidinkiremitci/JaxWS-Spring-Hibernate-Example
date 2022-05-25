@@ -12,7 +12,7 @@
 
     <properties>
         <servlet-api.version>2.5</servlet-api.version>
-        <spring.version>5.1.4.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
         <org.springframework.data.version>1.10.6.RELEASE</org.springframework.data.version>
         <hibernate.core.version>5.4.1.Final</hibernate.core.version>
         <hibernate.common.version>5.1.0.Final</hibernate.common.version>
